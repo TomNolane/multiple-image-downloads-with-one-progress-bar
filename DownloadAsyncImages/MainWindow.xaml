@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DownloadAsyncImages"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Download Images Async" Height="406" Width="661" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" IsManipulationEnabled="True">
     <Grid>
-        
+        <TextBox x:Name="textbox" AcceptsReturn="True" HorizontalAlignment="Left" Margin="30,29,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="206" Width="592" FontFamily="Times New Roman" FontWeight="Bold" FontSize="14" Cursor="Hand" Background="#19000000" BorderBrush="#FF413E8B"/>
+        <Button x:Name="start" Content="Start" HorizontalAlignment="Left" Margin="290,240,0,0" VerticalAlignment="Top" Width="75" Click="start_Click" BorderBrush="#FF413E8B"/>
+        <ProgressBar x:Name="progress_bar" HorizontalAlignment="Left" Height="24" Margin="10,343,0,0" VerticalAlignment="Top" Width="635" SmallChange="1" BorderBrush="#FF413E8B"/>
+        <Label x:Name="log" Content="Program is start!" HorizontalAlignment="Left" Margin="10,283,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.544,0.513" Width="623" Height="32"/>
+
     </Grid>
 </Window>
